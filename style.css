@@ -93,6 +93,7 @@ p{
 .recipe{
   border-left: solid 3px orange;
   padding-left: 10px;
+  line-height: 22px;
 }
 
 .print-btn{
