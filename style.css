@@ -1,0 +1,119 @@
+body{
+  background-color: black;
+  font-family: Raleway;
+  color: snow;
+}
+
+em{
+  color: orange;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#header{
+  display: block;
+  margin: 5% 10% 5% 10%;
+}
+
+#header-title{
+  font-size: 60px;
+  color: snow;
+  text-decoration: none;
+}
+
+#header-nav{
+  display: block;
+  float: right;
+  margin: 0;
+}
+
+#header-nav li{
+  display: inline;
+  padding-left: 20px;
+}
+
+#header-nav a{
+  text-decoration: none;
+  font-variant: small-caps;
+  color: snow;
+}
+
+#content{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.unit{
+  margin: 50px;
+  padding: 10px
+}
+
+
+.unit-title{
+  margin-top: 0;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 36px;
+  font-variant: small-caps;
+}
+
+.unit-quote{
+  width: 50%;
+  padding-left: 50%;
+}
+
+.quote-content{
+  border-left: solid 3px snow;
+  font-weight: 270;
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.quote-author{
+  font-weight: bold;
+  text-align: right;
+  margin-top: 0;
+}
+
+.unit-content{
+  column-count: 3;
+  padding-bottom: 20px;
+}
+
+.text{
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.recipe{
+  border-left: solid 3px orange;
+  padding-left: 10px;
+}
+
+.print-btn{
+  display: inline-block;
+  background-color: black;
+  font-size: 18px;
+  padding: 5px;
+  width: 100px;
+  color: snow;
+  border-radius: 5px;
+  border: solid snow 2px;
+  transition-duration: 0.5s;
+  align-items: center;
+}
+
+.print-btn:hover{
+  background-color: snow;
+  color: black;
+}
+
+.print-btn:active{
+  background-color: orange;
+  transition-duration: 0s;
+}
+
+::selection{
+  background-color: rgba(255,255,255,0.90);
+  color: black;
+}
