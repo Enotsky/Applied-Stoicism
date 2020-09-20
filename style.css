@@ -12,7 +12,7 @@ em{
 
 #header{
   display: block;
-  margin: 5% 10% 5% 10%;
+  margin: 5% 15% 5% 15%;
 }
 
 #header-title{
@@ -39,13 +39,12 @@ em{
 }
 
 #content{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .unit{
-  margin: 50px;
-  padding: 10px
+  margin-bottom: 50px;
 }
 
 
@@ -60,6 +59,7 @@ em{
 .unit-quote{
   width: 50%;
   padding-left: 50%;
+  margin-bottom: 20px;
 }
 
 .quote-content{
