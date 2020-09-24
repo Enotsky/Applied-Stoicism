@@ -17,17 +17,16 @@ p{
 
 #header{
   display: block;
-  margin: 5% 15% 5% 15%;
+  margin: 5% 15% 10% 15%;
 }
 
 #header-title{
-  font-size: 60px;
+  font-size: 72px;
   color: lightgrey;
   text-decoration: none;
 }
 
 #header-nav{
-  display: block;
   float: right;
   margin: 0;
 }
@@ -44,12 +43,11 @@ p{
 }
 
 #content{
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 15% 20% 15%;
 }
 
 .unit{
-  margin-bottom: 50px;
+  margin-bottom: 10%;
 }
 
 
@@ -57,7 +55,7 @@ p{
   margin-top: 0;
   text-decoration: none;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 44px;
   font-variant: small-caps;
 }
 
