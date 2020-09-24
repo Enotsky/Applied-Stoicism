@@ -83,6 +83,11 @@ p{
   padding-bottom: 20px;
 }
 
+.unit-about{
+  padding-bottom: 20px;
+  padding-right: 50%;
+}
+
 .text{
   padding-top: 0;
   margin-top: 0;
@@ -92,6 +97,10 @@ p{
   border-left: solid 3px orange;
   padding-left: 10px;
   line-height: 22px;
+}
+
+.directions{
+  list-style-type: lower-greek;
 }
 
 .print-btn{
@@ -120,4 +129,17 @@ p{
 ::selection{
   background-color: rgba(255,255,255,0.90);
   color: black;
+}
+
+.list-in-text{
+  list-style: none;
+}
+
+.list-in-text li::before{
+  content: "\2022";
+  color: orange;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
