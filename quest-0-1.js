@@ -106,7 +106,7 @@ library = [
     question: "Ага! Похоже, тебе нужно принять немного "+
     "<a href='#dichotomy'>Дихотомии контроля</a>!",
     answer1: "Давай еще раз",
-    answer2: "Пффф, скройся!",
+    answer2: "Скройся!",
     target1: 0,
     target2: 100
   },
@@ -122,16 +122,16 @@ library = [
     n: 7,
     question: "Очевидно! Это <a href='#aversion'>Уклонение</a>!",
     answer1: "Давай еще раз",
-    answer2: "Пффф, скройся!",
+    answer2: "Исчезни!",
     target1: 0,
     target2: 100
   },
   {
     n: 7,
     question: "Ну, тогда попробуй немного "+
-    "<a href='#sympathy'>Симпатии вместо эмпатии</a>!",
+    "<a href='#sympathy'>Сочувствия вместо эмпатии</a>!",
     answer1: "Давай еще раз",
-    answer2: "Пффф, скройся!",
+    answer2: "Иди отсюда!",
     target1: 0,
     target2: 100
   }
