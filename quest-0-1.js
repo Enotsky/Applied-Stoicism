@@ -54,6 +54,8 @@ var option2 = document.createElement("button");
 option2.classList.add("option-btn");
 block.appendChild(option2);
 
+var exits = [5,7];
+
 // LIBRARY
 library = [
   {
@@ -67,11 +69,11 @@ library = [
   },
   {
     n: 1,
-    question: "Окей, начнем. Как дела вообще?",
-    answer1: "Всё ровно",
-    answer2: "Ну есть сложности",
-    target1: 2,
-    target2: 3
+    question: "Окей, начнем. Как ты в целом?",
+    answer1: "Чилю",
+    answer2: "Парюсь",
+    target1: 3,
+    target2: 4
   },
   {
     n: 2,
@@ -83,9 +85,55 @@ library = [
   },
   {
     n: 3,
-    question: "Хм, а в чем заключается сложность",
-    answer1: "Не понятно, что делать",
-    answer2: "Надо делать, а я не хочу :("
+    question: "Ну, похоже, ты уже познал стоицизм. Попробуешь какое-нибудь "+
+    "случайное упражнение?",
+    answer1: "Ну давай",
+    answer2: "Не, давай до свидания",
+    target1: exits[Math.floor(Math.random() * exits.length)],
+    target2: 100
+  },
+  {
+    n: 4,
+    question: "Хммм, давай поговорим о твоей сложной ситуации. Знаешь ли ты, "+
+    "что нужно делать в этой твоей сложной ситуации?",
+    answer1: "Понятия не имею",
+    answer2: "Да всё там понятно",
+    target1: 5,
+    target2: 6
+  },
+  {
+    n: 5,
+    question: "Ага! Похоже, тебе нужно принять немного "+
+    "<a href='#dichotomy'>Дихотомии контроля</a>!",
+    answer1: "Давай еще раз",
+    answer2: "Пффф, скройся!",
+    target1: 0,
+    target2: 100
+  },
+  {
+    n: 6,
+    question: "Так, и чо не делаем тогда, раз такой умный?",
+    answer1: "Потому что не хочу делать вот это вот...",
+    answer2: "Потому что с этим ничего не поделаешь уже",
+    target1: 7,
+    target2: 8
+  },
+  {
+    n: 7,
+    question: "Очевидно! Это <a href='#aversion'>Уклонение</a>!",
+    answer1: "Давай еще раз",
+    answer2: "Пффф, скройся!",
+    target1: 0,
+    target2: 100
+  },
+  {
+    n: 7,
+    question: "Ну, тогда попробуй немного "+
+    "<a href='#sympathy'>Симпатии вместо эмпатии</a>!",
+    answer1: "Давай еще раз",
+    answer2: "Пффф, скройся!",
+    target1: 0,
+    target2: 100
   }
 
 ];
