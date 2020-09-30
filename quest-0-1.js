@@ -1,32 +1,36 @@
-// FUNCTIONS
+// VARIABLES
+var t = "Квест";
+if (localStorage.getItem('i') == null) {
+  localStorage.setItem('i', 0)
+}
 
+
+
+// FUNCTIONS
 /// Removing the quest block
 function kill(parent, child) {
   parent.removeChild(child);
+  localStorage.clear();
 }
 
 /// Delaying removal
 function bye(parent, child, text){
-  text.innerHTML = "Ну оооок :(";
+  text.innerHTML = "Пока! :(";
   setTimeout(kill, 2000, parent, child);
   console.log("clicked");
 }
 
-function update(i){
-  text.innerHTML = library[i].question;
-  option1.innerHTML = library[i].answer1;
-  option2.innerHTML = library[i].answer2;
+function update(ind){
+  if (ind == 100) {
+    bye(page, block, text)
+  } else {
+    text.innerHTML = library[ind].question;
+    option1.innerHTML = library[ind].answer1;
+    option2.innerHTML = library[ind].answer2;
+    localStorage.setItem('i', ind);
+    console.log(localStorage.getItem('i'));
+  }
 }
-
-
-
-// VARIABLES
-var i = 0;
-var t = "Квест"
-var q = "Могу посоветовать тебе какое-нибудь упражнение из области прикладного "+
-"стоицизма. Для этого нужно ответить на пару вопросов. Хочешь?";
-var op1 = "Давай";
-var op2 = "Да ну не";
 
 // OBJECTS
 
@@ -58,21 +62,24 @@ library = [
     "прикладного стоицизма. Для этого нужно ответить на пару вопросов. Хочешь?",
     answer1: "Давай",
     answer2: "Да ну не",
-    delta1: 1,
-    delta2: 2
+    target1: 1,
+    target2: 2
   },
   {
     n: 1,
     question: "Окей, начнем. Как дела вообще?",
     answer1: "Всё ровно",
     answer2: "Ну есть сложности",
-    delta1: 3
+    target1: 2,
+    target2: 3
   },
   {
     n: 2,
-    question: "Ну ооооок :(",
-    answer1: "Пока",
-    answer2: "Auf Wiedersehen",
+    question: "Ну ооооок :( Пойду тогда...",
+    answer1: "Ненене, я передумал",
+    answer2: "Давай-давай!",
+    target1: 1,
+    target2: 100
   },
   {
     n: 3,
@@ -85,8 +92,7 @@ library = [
 
 // Assining texts
 title.innerHTML = t;
-update(i);
+update(0);
 
-
-option1.addEventListener("click", function (){i = library[i].delta1; update(i)}, false);
-option2.addEventListener("click", function (){bye(page, block, text)}, false);
+option1.addEventListener("click", function(){update(library[localStorage.getItem('i')].target1)}, false);
+option2.addEventListener("click", function(){update(library[localStorage.getItem('i')].target2)}, false);
