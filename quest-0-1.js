@@ -1,10 +1,8 @@
 // VARIABLES
-var t = "Квест";
+var t = "Марк рекомендует";
 if (localStorage.getItem('i') == null) {
   localStorage.setItem('i', 0)
 }
-
-
 
 // FUNCTIONS
 /// Removing the quest block
@@ -39,29 +37,47 @@ var page = document.getElementById('content');
 var block = document.getElementById('quest-block');
 
 /// Adding new objects
+
+var ava = document.createElement('div');
+ava.classList.add('ava');
+block.appendChild(ava);
+
+var img = document.createElement('img');
+img.classList.add('maurelius');
+img.src = 'maimg.jpg';
+img.style.height = '180px';
+img.style.borderRadius = '180px';
+ava.appendChild(img);
+
+var dialog = document.createElement('div');
+dialog.classList.add('dialog');
+block.appendChild(dialog);
+
 var title = document.createElement('h2');
 title.classList.add('unit-title');
-block.appendChild(title);
+dialog.appendChild(title);
 
 var text = document.createElement("p");
-block.appendChild(text);
+dialog.appendChild(text);
 
 var option1 = document.createElement("button");
 option1.classList.add("option-btn");
-block.appendChild(option1);
+dialog.appendChild(option1);
 
 var option2 = document.createElement("button");
 option2.classList.add("option-btn");
-block.appendChild(option2);
+dialog.appendChild(option2);
 
-var exits = [5,7];
+var exits = [5,7,8];
 
 // LIBRARY
 library = [
   {
     n: 0,
-    question: "Могу посоветовать тебе какое-нибудь упражнение из области "+
-    "прикладного стоицизма. Для этого нужно ответить на пару вопросов. Хочешь?",
+    question: "Привет, я Марк. У меня большой опыт работы в должности императора "+
+    "и статус одного из топовых экспертов в области стоицизма. Могу посоветовать "+
+    "тебе какое-нибудь прикладное стоическое упражнение, исходя из твоих запровов. "+
+    "Для этого нужно ответить на пару вопросов. Хочешь?",
     answer1: "Давай",
     answer2: "Да ну не",
     target1: 1,
@@ -127,7 +143,7 @@ library = [
     target2: 100
   },
   {
-    n: 7,
+    n: 8,
     question: "Ну, тогда попробуй немного "+
     "<a href='#sympathy'>Сочувствия вместо эмпатии</a>!",
     answer1: "Давай еще раз",
