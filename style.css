@@ -51,6 +51,25 @@ a{
   margin: 0 15% 20% 15%;
 }
 
+.ava{
+  vertical-align: top;
+  display: inline-block;
+  width: 200px;
+  align-content: center;
+}
+
+.dialog{
+  vertical-align: top;
+  display: inline-block;
+  width: auto;
+  max-width: 75%;
+}
+
+.maurelius{
+  width: 180px;
+  border-radius: 100%;
+}
+
 .quest{
   border-left: solid 3px orange;
   border-right: solid 3px orange;
@@ -196,16 +215,4 @@ a{
 
 .button-link:hover{
   color: black;
-}
-
-.dialog{
-  vertical-align: top;
-  display: inline-block;
-  width: 800px;
-}
-
-.ava{
-  vertical-align: top;
-  display: inline-block;
-  width: 200px;
 }

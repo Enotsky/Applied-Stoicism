@@ -45,8 +45,6 @@ block.appendChild(ava);
 var img = document.createElement('img');
 img.classList.add('maurelius');
 img.src = 'maimg.jpg';
-img.style.height = '180px';
-img.style.borderRadius = '180px';
 ava.appendChild(img);
 
 var dialog = document.createElement('div');
