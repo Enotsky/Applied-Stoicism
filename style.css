@@ -20,9 +20,14 @@ a{
   color: orange;
 }
 
+#content{
+  margin: 5% 15% 20% 15%;
+}
+
+/*HEADER*/
 #header{
   display: block;
-  margin: 5% 15% 10% 15%;
+  margin: 5% 15% 5% 15%;
 }
 
 #header-title{
@@ -47,8 +52,13 @@ a{
   color: lightgrey;
 }
 
-#content{
-  margin: 0 15% 20% 15%;
+/*SCRIPT BLOCK*/
+.quest{
+  border-left: solid 3px orange;
+  border-right: solid 3px orange;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10%;
+  vertical-align: top;
 }
 
 .ava{
@@ -58,6 +68,11 @@ a{
   align-content: center;
 }
 
+.maurelius{
+  width: 180px;
+  border-radius: 100%;
+}
+
 .dialog{
   vertical-align: top;
   display: inline-block;
@@ -65,23 +80,9 @@ a{
   max-width: 75%;
 }
 
-.maurelius{
-  width: 180px;
-  border-radius: 100%;
-}
-
-.quest{
-  border-left: solid 3px orange;
-  border-right: solid 3px orange;
-  padding: 0 10px 0 10px;
-  margin-bottom: 10%;
-  vertical-align: top;
-}
-
 .unit{
   margin-bottom: 10%;
 }
-
 
 .unit-title{
   margin-top: 0;
@@ -215,4 +216,32 @@ a{
 
 .button-link:hover{
   color: black;
+}
+
+@media (max-width: 800px) {
+  #header-title{
+    font-size: 42px;
+  }
+
+  #header{
+    margin: 20px 20px 50px 20px;
+  }
+
+  .ava{
+    display: inline;
+    width: 100%;
+  }
+
+  #content{
+    margin: 20px 20px 50px 20px;
+  }
+
+  .unit-quote{
+    width: 80%;
+    padding-left: 15%
+  }
+
+  .unit-content{
+    column-count: 1;
+  }
 }
