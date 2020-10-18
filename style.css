@@ -1,3 +1,8 @@
+a{
+  text-decoration: none;
+  color: orange;
+}
+
 body{
   background-color: #101010;
   font-family: system-ui;
@@ -13,11 +18,6 @@ em{
 
 p{
   line-height: 22px;
-}
-
-a{
-  text-decoration: none;
-  color: orange;
 }
 
 #content{
@@ -80,6 +80,7 @@ a{
   max-width: 75%;
 }
 
+/*CONTENT BLOCK*/
 .unit{
   margin-bottom: 10%;
 }
@@ -137,6 +138,25 @@ a{
   list-style-type: lower-greek;
 }
 
+.list-in-text{
+  list-style: none;
+}
+
+.list-in-text li::before{
+  content: "\2022";
+  color: orange;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+::selection{
+  background-color: rgba(255,255,255,0.90);
+  color: black;
+}
+
+/*BUTTONS*/
 .print-btn{
   display: inline-block;
   background-color: #101010;
@@ -193,24 +213,6 @@ a{
   transition-duration: 0s;
 }
 
-::selection{
-  background-color: rgba(255,255,255,0.90);
-  color: black;
-}
-
-.list-in-text{
-  list-style: none;
-}
-
-.list-in-text li::before{
-  content: "\2022";
-  color: orange;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
 .button-link{
   color: snow;
 }
@@ -219,6 +221,7 @@ a{
   color: black;
 }
 
+/*SMARTPHONE VERSION*/
 @media (max-width: 800px) {
   #header-title{
     font-size: 42px;
