@@ -66,7 +66,7 @@ var option2 = document.createElement("button");
 option2.classList.add("option-btn");
 dialog.appendChild(option2);
 
-var exits = [5,7,8];
+var exits = [5,8,9,10];
 
 // LIBRARY
 library = [
@@ -126,14 +126,32 @@ library = [
   },
   {
     n: 6,
-    question: "И чо не делаем тогда, раз такой умный?",
-    answer1: "Потому что не хочу делать вот это вот...",
-    answer2: "Потому что с этим ничего не поделаешь уже",
+    question: "Ну и что тебе мешает, раз такой умный?",
+    answer1: "Эмоции",
+    answer2: "Не что, а кто",
     target1: 7,
     target2: 8
   },
   {
     n: 7,
+    question: "Так, то есть тебе сложно что-то предпринять в этой ситуации" +
+    "потому что...",
+    answer1: "Мне не нравятся сложности",
+    answer2: "Уже нечего там предпринимать",
+    target1: 9,
+    target2: 10
+
+  },
+  {
+    n: 8,
+    question: "Ок, попробуй <a href='#perspective'>Перспективу другого</a>",
+    answer1: "Повторим",
+    answer2: "Всё, пока",
+    target1: 0,
+    target2: 100
+  },
+  {
+    n: 9,
     question: "Очевидно! Это <a href='#aversion'>Уклонение</a>!",
     answer1: "Давай еще раз",
     answer2: "Исчезни!",
@@ -141,7 +159,7 @@ library = [
     target2: 100
   },
   {
-    n: 8,
+    n: 10,
     question: "Ну, тогда попробуй немного "+
     "<a href='#sympathy'>Сочувствия вместо эмпатии</a>!",
     answer1: "Давай еще раз",
